@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    results = '{ "genres": [{ "id": 28, "name": "Action" },{ "id": 18, "name": "Drama" },{ "id": 14, "name": "Fantasy" },{ "id": 36, "name": "History" }] }';    
+    results = JSON.parse(results);
+ 
+        for(i in results.genres){
+            document.write(results.genres[i].name);
+            console.log(results.genres[i].name);
+        }
+ 
+ </script>
+        
+        
+
+</body>
+</html>
